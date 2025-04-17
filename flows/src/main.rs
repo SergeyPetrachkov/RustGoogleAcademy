@@ -80,11 +80,15 @@ fn loop_loop() {
 	let mut i = 0;
 	loop {
 		i += 1;
-		println!("{i}");
+		dbg!(i);
 		if i > 100 {
 			break;
 		}
 	}
+}
+
+fn fizzbuzz(n: u32) -> u32 {
+	todo!("Demonstrate macros! n = {n}")
 }
 
 fn main() {
@@ -96,4 +100,5 @@ fn main() {
 	while_loop();
 	for_loop();
 	loop_loop();
+	fizzbuzz(1);
 }
