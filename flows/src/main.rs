@@ -88,17 +88,30 @@ fn loop_loop() {
 }
 
 fn fizzbuzz(n: u32) -> u32 {
+	return 1;
 	todo!("Demonstrate macros! n = {n}")
 }
 
+fn collatz_sequence(mut n: i32) -> u32 {
+	let mut sequence_length = 1;
+
+	while n > 1 {
+		n = if n % 2 == 0 { n / 2 } else { 3 * n + 1 };
+		sequence_length += 1;
+	}
+
+	sequence_length
+}
+
 fn main() {
-	blocks();
-	if_else();
-	if_as_expression();
-	match_expressions();
-	match_returning_values();
-	while_loop();
-	for_loop();
-	loop_loop();
-	fizzbuzz(1);
+	// blocks();
+	// if_else();
+	// if_as_expression();
+	// match_expressions();
+	// match_returning_values();
+	// while_loop();
+	// for_loop();
+	// loop_loop();
+	// fizzbuzz(1);
+	dbg!(collatz_sequence(11));
 }
