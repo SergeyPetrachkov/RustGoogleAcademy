@@ -2,8 +2,10 @@
 <module type="EMPTY_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Geometry/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/exercise1/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/flows/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/Geometry/target" />
       <excludeFolder url="file://$MODULE_DIR$/exercise1/target" />
       <excludeFolder url="file://$MODULE_DIR$/flows/target" />
     </content>
