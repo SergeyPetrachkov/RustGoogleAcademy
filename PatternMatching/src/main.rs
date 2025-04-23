@@ -29,6 +29,19 @@ struct Foo {
     y: u32,
 }
 
+enum Result {
+    Ok(i32),
+    Err(String),
+}
+
+fn divide_in_two(n: i32) -> Result {
+    if n % 2 == 0 {
+        Result::Ok(n / 2)
+    } else {
+        Result::Err(format!("Cannot divide {n} by 2"))
+    }
+}
+
 fn main() {
     takes_array([1, 2, 3, 4, 5]);
     takes_tuple(('a', 1, true, 2));
@@ -42,5 +55,11 @@ fn main() {
             i.0 = 3;
         },
         Foo { y, .. }        => println!("y = {y}, other fields were ignored"),
+    }
+
+    let n = 101;
+    match divide_in_two(n) {
+        Result::Ok(half) => println!("{n} divided in two is {half}"),
+        Result::Err(msg) => println!("sorry, an error happened: {msg}"),
     }
 }
