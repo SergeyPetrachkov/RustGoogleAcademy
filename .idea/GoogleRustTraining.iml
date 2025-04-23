@@ -7,11 +7,13 @@
       <sourceFolder url="file://$MODULE_DIR$/UserDefinedTypes/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/exercise1/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/flows/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PatternMatching/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/ElevatorEvents/target" />
       <excludeFolder url="file://$MODULE_DIR$/Geometry/target" />
       <excludeFolder url="file://$MODULE_DIR$/UserDefinedTypes/target" />
       <excludeFolder url="file://$MODULE_DIR$/exercise1/target" />
       <excludeFolder url="file://$MODULE_DIR$/flows/target" />
+      <excludeFolder url="file://$MODULE_DIR$/PatternMatching/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
