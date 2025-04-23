@@ -24,8 +24,23 @@ fn takes_another_tuple(tuple: (char, i32, bool)) {
     let (.., c) = tuple;
 }
 
+struct Foo {
+    x: (u32, u32),
+    y: u32,
+}
+
 fn main() {
     takes_array([1, 2, 3, 4, 5]);
     takes_tuple(('a', 1, true, 2));
     takes_another_tuple(('a', 1, true));
+
+    let mut foo = Foo { x: (1, 2), y: 3 };
+    match &mut foo {
+        Foo { x: (1, b), y } => println!("x.0 = 1, b = {b}, y = {y}"),
+        Foo { y: 2, x: i }   => {
+            println!("y = 2, x = {i:?}");
+            i.0 = 3;
+        },
+        Foo { y, .. }        => println!("y = {y}, other fields were ignored"),
+    }
 }
