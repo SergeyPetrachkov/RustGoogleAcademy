@@ -29,17 +29,34 @@ struct Foo {
     y: u32,
 }
 
-enum Result {
+enum Res {
     Ok(i32),
     Err(String),
 }
 
-fn divide_in_two(n: i32) -> Result {
+fn divide_in_two(n: i32) -> Res {
     if n % 2 == 0 {
-        Result::Ok(n / 2)
+        Res::Ok(n / 2)
     } else {
-        Result::Err(format!("Cannot divide {n} by 2"))
+        Res::Err(format!("Cannot divide {n} by 2"))
     }
+}
+
+fn hex_or_die_trying(maybe_string: Option<String>) -> Result<u32, String> {
+    // check optionality
+    let Some(s) = maybe_string else {
+        return Err(String::from("got None"));
+    };
+    
+    let Some(first_byte_char) = s.chars().next() else {
+        return Err(String::from("got empty string"));
+    };
+
+    let Some(digit) = first_byte_char.to_digit(16) else {
+        return Err(String::from("not a hex digit"));
+    };
+
+    Ok(digit)
 }
 
 fn main() {
