@@ -22,9 +22,6 @@ enum Expression {
 }
 
 fn eval(e: Expression) -> i64 {
-    if let Expression::Value(value) = e {
-        return value;
-    }
     match e {
         Expression::Value(value) => value,
         Expression::Op { op, left, right } => {
