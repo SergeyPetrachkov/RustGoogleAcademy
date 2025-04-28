@@ -39,22 +39,7 @@ fn eval(e: Expression) -> i64 {
 
 #[test]
 fn test_value() {
-    assert_eq!(eval(Expression::Value(19)), 19);
-}
-
-#[test]
-fn test_sum() {
-    assert_eq!(
-        eval(Expression::Op {
-            op: Operation::Add,
-            left: Box::new(Expression::Value(10)),
-            right: Box::new(Expression::Value(20)),
-        }),
-        30
-    );
-}
-
-#[test]
+    assert_eq!(eval(Expression#[test]
 fn test_recursion() {
     let term1 = Expression::Op {
         op: Operation::Mul,
@@ -78,7 +63,22 @@ fn test_recursion() {
         }),
         85
     );
+}::Value(19)), 19);
 }
+
+#[test]
+fn test_sum() {
+    assert_eq!(
+        eval(Expression::Op {
+            op: Operation::Add,
+            left: Box::new(Expression::Value(10)),
+            right: Box::new(Expression::Value(20)),
+        }),
+        30
+    );
+}
+
+
 
 #[test]
 fn test_zeros() {
@@ -121,6 +121,18 @@ fn test_div() {
 }
 
 
+enum Direction { North, South, West, East }
+
 fn main() {
-    println!("Hello, world!");
+    let direction = Direction::North;
+    let direction_string = match direction {
+        Direction::North => "North",
+        Direction::South => "South",
+        Direction::West  => "West",
+        Direction::East  => "East",
+    };
+    println!("Direction: {}", direction_string);
 }
+// fn main() {
+//     println!("Hello, world!");
+// }
