@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/flows/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ExpressionEvaluation/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PatternMatching/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LoggerTrait/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MethodsAndTraits/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/ElevatorEvents/target" />
       <excludeFolder url="file://$MODULE_DIR$/Geometry/target" />
@@ -17,6 +18,7 @@
       <excludeFolder url="file://$MODULE_DIR$/flows/target" />
       <excludeFolder url="file://$MODULE_DIR$/ExpressionEvaluation/target" />
       <excludeFolder url="file://$MODULE_DIR$/PatternMatching/target" />
+      <excludeFolder url="file://$MODULE_DIR$/LoggerTrait/target" />
       <excludeFolder url="file://$MODULE_DIR$/MethodsAndTraits/target" />
     </content>
     <orderEntry type="inheritedJdk" />
