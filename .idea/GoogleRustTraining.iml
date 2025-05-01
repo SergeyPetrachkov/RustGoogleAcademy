@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/PatternMatching/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LoggerTrait/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MethodsAndTraits/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GenericCounter/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GenericMin/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/ElevatorEvents/target" />
       <excludeFolder url="file://$MODULE_DIR$/Geometry/target" />
@@ -21,6 +22,7 @@
       <excludeFolder url="file://$MODULE_DIR$/PatternMatching/target" />
       <excludeFolder url="file://$MODULE_DIR$/LoggerTrait/target" />
       <excludeFolder url="file://$MODULE_DIR$/MethodsAndTraits/target" />
+      <excludeFolder url="file://$MODULE_DIR$/GenericCounter/target" />
       <excludeFolder url="file://$MODULE_DIR$/GenericMin/target" />
     </content>
     <orderEntry type="inheritedJdk" />
