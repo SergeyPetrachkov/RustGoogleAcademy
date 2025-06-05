@@ -20,6 +20,7 @@
       <sourceFolder url="file://$MODULE_DIR$/BuilderType/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/BinaryTree/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/OwnedTraitObjects/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Borrowing/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/ElevatorEvents/target" />
       <excludeFolder url="file://$MODULE_DIR$/Geometry/target" />
       <excludeFolder url="file://$MODULE_DIR$/UserDefinedTypes/target" />
@@ -38,6 +39,7 @@
       <excludeFolder url="file://$MODULE_DIR$/BuilderType/target" />
       <excludeFolder url="file://$MODULE_DIR$/BinaryTree/target" />
       <excludeFolder url="file://$MODULE_DIR$/OwnedTraitObjects/target" />
+      <excludeFolder url="file://$MODULE_DIR$/Borrowing/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
